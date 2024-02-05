@@ -369,7 +369,14 @@ bool esSeguro(int k, int x, vector<int>& tablero) { //Lugar
     return true;
 }
 
-if (tablero[i] = x || abs(tabl))
+bool Lugar(int k, int x[]) {
+    for (int i = 0; i < k; ++i) {
+        if (x[i] == x[k] || std::abs(x[i] - x[k]) == std::abs(i - k)) {
+            return false;
+        }
+    }
+    return true;
+}
 
 
 //Aprender
