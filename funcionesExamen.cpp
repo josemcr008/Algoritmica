@@ -1,5 +1,18 @@
 //////////////////// P1 - P2
 
+
+double sumatorio(vector <double> &n, vector <double> &t,int expN, int expT){
+    double resultado = 0.0;
+
+    for (size_t i = 0; i < n.size(); ++i) {
+        double termino = pow(n[i], expN) * pow(t[i], expT);
+        resultado += termino;
+    }
+
+    return resultado;
+}
+
+
 //Bien
 double calcularCoeficienteDeterminacion(const vector <double> &tiemposReales, const vector <double>&tiemposEstimados){
 
